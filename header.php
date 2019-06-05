@@ -27,7 +27,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
 	<meta name="msapplication-TileColor" content="#2F3BA2">
-	<!-- <?php wp_head(); ?> -->
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
