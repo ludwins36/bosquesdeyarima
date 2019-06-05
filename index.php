@@ -15,7 +15,7 @@
  * @version 1.0
  */
 
-?>
+get_header(); ?>
 
 <header class="container-fluid category-header">
 	<?php the_title('<h1 class="container titulo">', '</h1>'); ?>
