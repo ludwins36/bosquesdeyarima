@@ -42,7 +42,7 @@
 	menuToggle = masthead.find('.menu-toggle');
 	siteNavContain = masthead.find('.main-navigation');
 	siteNavigation = masthead.find('.main-navigation > div > ul');
-	// menuGeneral = $('.nav-tabs').html();
+	menuGeneral = $('.nav-tabs').html();
 	tituloPs = $('li.proyectos a').html();
 	subMenuPs = $('li.proyectos .sub-menu').html();
 	tituloTC = $('li.tipoCasas a').html();
