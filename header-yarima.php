@@ -39,14 +39,14 @@
 			<div class="container-fluid container-logo">
 				<div class="row">
 					<div class="col-12 logoyarima">
-						<?php get_template_part('template-parts/header/header', 'image'); ?>
+						<!-- <?php get_template_part('template-parts/header/header', 'image'); ?> -->
 					</div>
 				</div>
 			</div>
 			<div class="container-fluid padding0 container-menu">
 				<div class="row">
 					<div class="col-12 menuyarima">
-						hola
+
 						<?php if (has_nav_menu('top')) : ?>
 							<div class="navigation-top">
 								<?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
