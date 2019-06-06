@@ -38,7 +38,7 @@
 		});
 	}
 	initMainNavigation($('.main-navigation'));
-	// masthead       	= $('#masthead'); 	
+	masthead = $('#masthead');
 	menuToggle = masthead.find('.menu-toggle');
 	siteNavContain = masthead.find('.main-navigation');
 	siteNavigation = masthead.find('.main-navigation > div > ul');
