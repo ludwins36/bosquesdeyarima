@@ -23,6 +23,7 @@ $caracteristicas = get_field('caracteristicas');
 			<div class="entry-content">
 				<div class="titulo">
 					<h1>
+						hola
 						<span><?php the_title(); ?></span>
 						<br>
 						<span class="linea_2"><?php if ($dimension) : echo $dimension;
