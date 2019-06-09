@@ -92,12 +92,12 @@ $caracteristicas = get_field('caracteristicas');
 									<div class="card-header" role="tab" id="heading">
 										<span id="caracteristicas">CARACTERISTICAS</span>
 									</div>
-									<div id="collapse" class="" role="tabpanel" aria-labelledby="heading">
-										<div class="card-block">
-											<img src="<?php echo $caracteristicas; ?>">
+									<img src="<?php echo $caracteristicas; ?>">
+									<!-- <div id="collapse" class="" role="tabpanel" aria-labelledby="heading">
+											<div class="card-block">
 
-										</div>
-									</div>
+											</div>
+										</div> -->
 								</div>
 							<?php endif; ?>
 						</div>
