@@ -31,12 +31,12 @@ $caracteristicas = get_field('caracteristicas');
 				</div>
 				<div class="escoge-tu-casa contenido-tipo-casa">
 					<div class="contenedor-galeria row">
-						<div class="col-md-9 contenedor-info">
+						<div class="col-md-12 contenedor-info">
 							<div class="" id="accordion" role="tablist" aria-multiselectable="true">
 								<?php if ($isometria) : ?>
 									<div class="card">
-										<div class="card-header active" role="tab" id="heading">
-											<span id="isometria" url="<?php echo $isometria; ?>">ISOMETRIA</span>
+										<div class="card-header" role="tab" id="heading">
+											<img id="isometria" src="<?php echo $isometria; ?>">ISOMETRIA</span>
 										</div>
 									</div>
 								<?php endif; ?>
