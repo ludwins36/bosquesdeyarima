@@ -23,7 +23,6 @@ $caracteristicas = get_field('caracteristicas');
 			<div class="entry-content">
 				<div class="titulo">
 					<h1>
-						hola
 						<span><?php the_title(); ?></span>
 						<br>
 						<span class="linea_2"><?php if ($dimension) : echo $dimension;
@@ -41,47 +40,59 @@ $caracteristicas = get_field('caracteristicas');
 										</div>
 									</div>
 								<?php endif; ?>
-								<?php if ($planta) : ?>
-									<div class="card ">
-										<div class="card-header" role="tab" id="heading">
-											<span id="planta" url="<?php echo $planta; ?>">PLANTA</span>
-										</div>
-									</div>
-								<?php endif; ?>
-								<?php if ($fachada_frontal) : ?>
-									<div class="card ">
-										<div class="card-header" role="tab" id="heading">
-											<span id="fachada_frontal" url="<?php echo $fachada_frontal; ?>">FACHADA FRONTAL</span>
-										</div>
-									</div>
-								<?php endif; ?>
-								<?php if ($fachada_posterior) : ?>
-									<div class="card ">
-										<div class="card-header" role="tab" id="heading">
-											<span id="fachada_posterior" url="<?php echo $fachada_posterior; ?>">FACHADA POSTERIOR</span>
-										</div>
-									</div>
-								<?php endif; ?>
-								<?php if ($areas) : ?>
-									<div class="card ">
-										<div class="card-header" role="tab" id="heading">
-											<span id="caracteristicas">CARACTERISTICAS</span>
-										</div>
-										<div id="collapse" class="" role="tabpanel" aria-labelledby="heading">
-											<div class="card-block">
-												<img src="<?php echo $caracteristicas; ?>">
 
-											</div>
-										</div>
-									</div>
-								<?php endif; ?>
+							</div>
+							<div class="col-md-9 contenedor-varios changeImage">
+								<div class="contenedor" <?php if (has_post_thumbnail()) { ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>') ;" <?php } else { ?> style="background-image: url('<?php bloginfo('template_url'); ?>/images/imagen_generica.jpg')  ; " <?php } ?>>
+
+								</div>
+
 							</div>
 						</div>
-						<div class="col-md-9 contenedor-varios changeImage">
-							<div class="contenedor" <?php if (has_post_thumbnail()) { ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>') ;" <?php } else { ?> style="background-image: url('<?php bloginfo('template_url'); ?>/images/imagen_generica.jpg')  ; " <?php } ?>>
+						<div class="col-md-3 contenedor-info">
+							<?php if ($planta) : ?>
+								<div class="card ">
+									<div class="card-header" role="tab" id="heading">
+										<span id="planta" url="<?php echo $planta; ?>">PLANTA</span>
+									</div>
+								</div>
+							<?php endif; ?>
 
-							</div>
+						</div>
+						<div class="col-md-3 contenedor-info">
+							<?php if ($fachada_frontal) : ?>
+								<div class="card ">
+									<div class="card-header" role="tab" id="heading">
+										<span id="fachada_frontal" url="<?php echo $fachada_frontal; ?>">FACHADA FRONTAL</span>
+									</div>
+								</div>
+							<?php endif; ?>
 
+						</div>
+						<div class="col-md-3 contenedor-info">
+							<?php if ($fachada_posterior) : ?>
+								<div class="card ">
+									<div class="card-header" role="tab" id="heading">
+										<span id="fachada_posterior" url="<?php echo $fachada_posterior; ?>">FACHADA POSTERIOR</span>
+									</div>
+								</div>
+							<?php endif; ?>
+
+						</div>
+						<div class="col-md-3 contenedor-info">
+							<?php if ($areas) : ?>
+								<div class="card ">
+									<div class="card-header" role="tab" id="heading">
+										<span id="caracteristicas">CARACTERISTICAS</span>
+									</div>
+									<div id="collapse" class="" role="tabpanel" aria-labelledby="heading">
+										<div class="card-block">
+											<img src="<?php echo $caracteristicas; ?>">
+
+										</div>
+									</div>
+								</div>
+							<?php endif; ?>
 						</div>
 					</div>
 					<?php
