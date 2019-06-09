@@ -36,8 +36,10 @@ $caracteristicas = get_field('caracteristicas');
 								<?php if ($isometria) : ?>
 									<div class="card">
 										<div class="card-header" role="tab" id="heading">
-											<img id="isometria" src="<?php echo $isometria; ?>">ISOMETRIA</span>
+											<span id="isometria">">ISOMETRIA</span>
+
 										</div>
+										<img id="isometria" src="<?php echo $isometria; ?>">ISOMETRIA</span>
 									</div>
 								<?php endif; ?>
 
@@ -97,12 +99,7 @@ $caracteristicas = get_field('caracteristicas');
 							<?php endif; ?>
 						</div>
 					</div>
-					<div class="col-md-9 contenedor-varios changeImage">
-						<div class="contenedor" <?php if (has_post_thumbnail()) { ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>') ;" <?php } else { ?> style="background-image: url('<?php bloginfo('template_url'); ?>/images/imagen_generica.jpg')  ; " <?php } ?>>
 
-						</div>
-
-					</div>
 					<?php
 					the_post_navigation(
 						array(
