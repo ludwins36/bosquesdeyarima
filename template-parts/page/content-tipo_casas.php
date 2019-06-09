@@ -30,7 +30,7 @@ $caracteristicas = get_field('caracteristicas');
 					</h1>
 				</div>
 				<div class="escoge-tu-casa contenido-tipo-casa">
-					<div class="contenedor-galeria row">
+					<div class="row justify-content-md-center">
 						<div class="col-md-9 contenedor-info">
 							<div class="" id="accordion" role="tablist" aria-multiselectable="true">
 								<?php if ($isometria) : ?>
@@ -45,7 +45,7 @@ $caracteristicas = get_field('caracteristicas');
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row justify-content-md-center">
 						<div class="col-md-9">
 							<?php if ($planta) : ?>
 								<div class="card ">
@@ -72,7 +72,7 @@ $caracteristicas = get_field('caracteristicas');
 
 						</div>
 					</div>
-					<div class="row">
+					<div class="row justify-content-md-center">
 						<div class="col-md-9">
 							<?php if ($fachada_posterior) : ?>
 								<div class="card">
@@ -85,7 +85,7 @@ $caracteristicas = get_field('caracteristicas');
 
 						</div>
 					</div>
-					<div class="row">
+					<div class="row justify-content-md-center">
 						<div class="col-md-6">
 							<?php if ($areas) : ?>
 								<div class="card ">
