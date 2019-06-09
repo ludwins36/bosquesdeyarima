@@ -50,8 +50,9 @@ $caracteristicas = get_field('caracteristicas');
 							<?php if ($planta) : ?>
 								<div class="card ">
 									<div class="card-header" role="tab" id="heading">
-										<span id="planta" url="<?php echo $planta; ?>">PLANTA</span>
+										<span id="planta">PLANTA</span>
 									</div>
+									<img id="planta" style="width: 80vw;" src="<?php echo $planta; ?>" />
 								</div>
 							<?php endif; ?>
 
