@@ -40,68 +40,56 @@ $caracteristicas = get_field('caracteristicas');
 										</div>
 									</div>
 								<?php endif; ?>
-
-							</div>
-							<div class="col-md-9 contenedor-varios changeImage">
-								<div class="contenedor" <?php if (has_post_thumbnail()) { ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>') ;" <?php } else { ?> style="background-image: url('<?php bloginfo('template_url'); ?>/images/imagen_generica.jpg')  ; " <?php } ?>>
-
-								</div>
-
-							</div>
-						</div>
-						<div class="col-md-3 contenedor-info">
-							<?php if ($planta) : ?>
-								<div class="card ">
-									<div class="card-header" role="tab" id="heading">
-										<span id="planta" url="<?php echo $planta; ?>">PLANTA</span>
-									</div>
-								</div>
-							<?php endif; ?>
-
-						</div>
-						<div class="col-md-3 contenedor-info">
-							<?php if ($fachada_frontal) : ?>
-								<div class="card ">
-									<div class="card-header" role="tab" id="heading">
-										<span id="fachada_frontal" url="<?php echo $fachada_frontal; ?>">FACHADA FRONTAL</span>
-									</div>
-								</div>
-							<?php endif; ?>
-
-						</div>
-						<div class="col-md-3 contenedor-info">
-							<?php if ($fachada_posterior) : ?>
-								<div class="card ">
-									<div class="card-header" role="tab" id="heading">
-										<span id="fachada_posterior" url="<?php echo $fachada_posterior; ?>">FACHADA POSTERIOR</span>
-									</div>
-								</div>
-							<?php endif; ?>
-
-						</div>
-						<div class="col-md-3 contenedor-info">
-							<?php if ($areas) : ?>
-								<div class="card ">
-									<div class="card-header" role="tab" id="heading">
-										<span id="caracteristicas">CARACTERISTICAS</span>
-									</div>
-									<div id="collapse" class="" role="tabpanel" aria-labelledby="heading">
-										<div class="card-block">
-											<img src="<?php echo $caracteristicas; ?>">
-
+								<?php if ($planta) : ?>
+									<div class="card ">
+										<div class="card-header" role="tab" id="heading">
+											<span id="planta" url="<?php echo $planta; ?>">PLANTA</span>
 										</div>
 									</div>
-								</div>
-							<?php endif; ?>
+								<?php endif; ?>
+								<?php if ($fachada_frontal) : ?>
+									<div class="card ">
+										<div class="card-header" role="tab" id="heading">
+											<span id="fachada_frontal" url="<?php echo $fachada_frontal; ?>">FACHADA FRONTAL</span>
+										</div>
+									</div>
+								<?php endif; ?>
+								<?php if ($fachada_posterior) : ?>
+									<div class="card ">
+										<div class="card-header" role="tab" id="heading">
+											<span id="fachada_posterior" url="<?php echo $fachada_posterior; ?>">FACHADA POSTERIOR</span>
+										</div>
+									</div>
+								<?php endif; ?>
+								<?php if ($areas) : ?>
+									<div class="card ">
+										<div class="card-header" role="tab" id="heading">
+											<span id="caracteristicas">CARACTERISTICAS</span>
+										</div>
+										<div id="collapse" class="" role="tabpanel" aria-labelledby="heading">
+											<div class="card-block">
+												<img src="<?php echo $caracteristicas; ?>">
+
+											</div>
+										</div>
+									</div>
+								<?php endif; ?>
+							</div>
+						</div>
+						<div class="col-md-9 contenedor-varios changeImage">
+							<div class="contenedor" <?php if (has_post_thumbnail()) { ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>') ;" <?php } else { ?> style="background-image: url('<?php bloginfo('template_url'); ?>/images/imagen_generica.jpg')  ; " <?php } ?>>
+
+							</div>
+
 						</div>
 					</div>
 					<?php
-					// the_post_navigation(
-					// 	array(
-					// 		'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'twentyseventeen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous', 'twentyseventeen' ) . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '</span>%title</span>',
-					// 		'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'twentyseventeen' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Next', 'twentyseventeen' ) . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ) . '</span></span>',
-					// 	)
-					// );
+					the_post_navigation(
+						array(
+							'prev_text' => '<span class="screen-reader-text">' . __('Previous Post', 'twentyseventeen') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Previous', 'twentyseventeen') . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg(array('icon' => 'arrow-left')) . '</span>%title</span>',
+							'next_text' => '<span class="screen-reader-text">' . __('Next Post', 'twentyseventeen') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Next', 'twentyseventeen') . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg(array('icon' => 'arrow-right')) . '</span></span>',
+						)
+					);
 					?>
 				</div>
 			</div><!-- .entry-content -->
