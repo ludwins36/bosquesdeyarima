@@ -46,7 +46,7 @@ $caracteristicas = get_field('caracteristicas');
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-9">
+						<div class="col-md-12">
 							<?php if ($planta) : ?>
 								<div class="card ">
 									<div class="card-header" role="tab" id="heading">
@@ -63,20 +63,23 @@ $caracteristicas = get_field('caracteristicas');
 							<?php if ($fachada_frontal) : ?>
 								<div class="card ">
 									<div class="card-header" role="tab" id="heading">
-										<span id="fachada_frontal" url="<?php echo $fachada_frontal; ?>">FACHADA FRONTAL</span>
+										<span id="fachada_frontal">FACHADA FRONTAL</span>
 									</div>
+									<img id="fachada_frontal" style="width: 80vw;" src="<?php echo $fachada_frontal; ?>" />
+
 								</div>
 							<?php endif; ?>
 
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-9">
+						<div class="col-md-12">
 							<?php if ($fachada_posterior) : ?>
-								<div class="card ">
+								<div class="card">
 									<div class="card-header" role="tab" id="heading">
-										<span id="fachada_posterior" url="<?php echo $fachada_posterior; ?>">FACHADA POSTERIOR</span>
+										<span id="fachada_posterior">FACHADA POSTERIOR</span>
 									</div>
+									<img id="fachada_posterior" style="width: 80vw;" src="<?php echo $fachada_posterior; ?>" />
 								</div>
 							<?php endif; ?>
 
