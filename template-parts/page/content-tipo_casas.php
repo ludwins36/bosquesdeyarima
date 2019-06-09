@@ -86,7 +86,7 @@ $caracteristicas = get_field('caracteristicas');
 						</div>
 					</div>
 					<div class="row justify-content-md-center">
-						<div class="col-md-6">
+						<div class="col-md-4">
 							<?php if ($areas) : ?>
 								<div class="card ">
 									<div class="card-header" role="tab" id="heading">
@@ -94,10 +94,10 @@ $caracteristicas = get_field('caracteristicas');
 									</div>
 									<img src="<?php echo $caracteristicas; ?>">
 									<!-- <div id="collapse" class="" role="tabpanel" aria-labelledby="heading">
-											<div class="card-block">
+												<div class="card-block">
 
-											</div>
-										</div> -->
+												</div>
+											</div> -->
 								</div>
 							<?php endif; ?>
 						</div>
