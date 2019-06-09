@@ -38,7 +38,7 @@ $caracteristicas = get_field('caracteristicas');
 										<div class="card-header" role="tab" id="heading">
 											<span id="isometria">ISOMETRIA</span>
 										</div>
-										<img id="isometria" style="width: 80vw; height: 60%;" src="<?php echo $isometria; ?>" />
+										<img id="isometria" style="width: 80vw;" src="<?php echo $isometria; ?>" />
 									</div>
 								<?php endif; ?>
 
