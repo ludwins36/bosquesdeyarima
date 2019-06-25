@@ -12,7 +12,7 @@
  * @version 1.0
  */
 
-get_header('asul'); ?>
+get_header('yarima'); ?>
 
 <div class="">
 	<div id="primary" class="content-area">
