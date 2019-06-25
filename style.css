@@ -1866,7 +1866,9 @@ footer#colophon.fixed {
 		-moz-transition: left 0.6s ease !important;
 		-o-transition: left 0.6s ease !important;
 		transition: left 0.6s ease !important;
+	
 	}
+
 
 	.main-navigation ul ul a {
 		width: 100%;
@@ -5793,6 +5795,12 @@ footer#colophon.fixed {
 
 
 
+}
+
+#button-tour{
+	text-decoration: none;
+	background: #87aa00;
+	margin-right: 70%;
 }
 
 
