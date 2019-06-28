@@ -54,12 +54,12 @@
 	sinSubmenu = $('body.home').length || (window.location.href.indexOf("arma-tu-casa") > -1) || (window.location.href.indexOf("ubicacion") > -1) || (window.location.href.indexOf("contacto") > -1);
 	// MENU ANIMATION
 	// false menu proyectos
-	/*$('li.proyectos').click(function(){
+	$('li.proyectos').click(function () {
 		$('#falseMenu h2').html(tituloPs);
 		$('#falseMenu ul.falseMenu').html(subMenuPs);
 		$('.menu-mobile-container').hide();
 		$('#falseMenu').show();
-	});*/
+	});
 	//false menu for proyecto's childs
 	(function () {
 		if (paginasInternas) {
