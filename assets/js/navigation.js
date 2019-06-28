@@ -43,8 +43,8 @@
 	siteNavContain = masthead.find('.main-navigation');
 	siteNavigation = masthead.find('.main-navigation > div > ul');
 	menuGeneral = $('.nav-tabs').html();
-	tituloPs = $('li.menu-item-2740 a').html();
-	subMenuPs = $('li.menu-item-2740 .sub-menu').html();
+	tituloPs = $('li.menu-item-2730 a').html();
+	subMenuPs = $('li.menu-item-2730 .sub-menu').html();
 	tituloTC = $('li.tipoCasas a').html();
 	subMenuTC = $('li.tipoCasas .sub-menu').html();
 	tituloU = $('li.ubicacion a').html();
