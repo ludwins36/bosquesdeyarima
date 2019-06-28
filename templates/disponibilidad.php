@@ -14,7 +14,7 @@
  */
 get_header('yarima'); ?>
 <div class="container-fluid">
-	<div id="primary" class="content-area">hola
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php // Show the selected frontpage content.

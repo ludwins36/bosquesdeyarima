@@ -50,8 +50,10 @@
 	tituloU = $('li.ubicacion a').html();
 	tituloC = $('li.contacto a').html();
 	mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-	paginasInternas = (window.location.href.indexOf("informacion") > -1) || (window.location.href.indexOf("disponibilidad") > -1) || (window.location.href.indexOf("tour-360-exterior") > -1) || (window.location.href.indexOf("imagenes-exteriores") > -1) || (window.location.href.indexOf("planos") > -1);
+	paginasInternas = (window.location.href.indexOf("informacion") > -1) || (window.location.href.indexOf("tour-360-exterior") > -1) || (window.location.href.indexOf("imagenes-exteriores") > -1) || (window.location.href.indexOf("planos") > -1);
 	sinSubmenu = $('body.home').length || (window.location.href.indexOf("arma-tu-casa") > -1) || (window.location.href.indexOf("ubicacion") > -1) || (window.location.href.indexOf("contacto") > -1);
+	ubicacion = (window.location.href.indexOf("ubicacion") > -1);
+
 	// MENU ANIMATION
 	// false menu proyectos
 	// $('li.proyectos').click(function () {
