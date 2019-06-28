@@ -45,6 +45,9 @@
 	menuGeneral = $('.nav-tabs').html();
 	tituloPs = $('li.menu-item-2730 a').html();
 	subMenuPs = $('li.menu-item-2730 .sub-menu').html();
+	tituloUb = $('li.menu-item-2734 a').html();
+	subMenuUb = $('li.menu-item-2734 .sub-menu').html();
+
 	tituloTC = $('li.tipoCasas a').html();
 	subMenuTC = $('li.tipoCasas .sub-menu').html();
 	tituloU = $('li.ubicacion a').html();
@@ -78,8 +81,8 @@
 	(function () {
 		if (ubicacion) {
 			$('#thumbnail-slider').fadeTo(0, 1, function () {});
-			$('#falseMenu h2').html(tituloPs);
-			$('#falseMenu ul.falseMenu').html(subMenuPs);
+			$('#falseMenu h2').html(tituloUb);
+			$('#falseMenu ul.falseMenu').html(subMenuUb);
 			$('.menu-mobile-container').hide();
 			$('#falseMenu').show();
 			if (mobile) {
