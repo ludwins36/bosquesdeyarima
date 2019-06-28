@@ -75,6 +75,18 @@
 			}
 		}
 	})();
+	(function () {
+		if (ubicacion) {
+			$('#thumbnail-slider').fadeTo(0, 1, function () {});
+			$('#falseMenu h2').html(tituloPs);
+			$('#falseMenu ul.falseMenu').html(subMenuPs);
+			$('.menu-mobile-container').hide();
+			$('#falseMenu').show();
+			if (mobile) {
+				$('#falseMenu').hide();
+			}
+		}
+	})();
 	//false thumbnailslider
 	(function () {
 		if ((window.location.href.indexOf("imagenes-interiores") > -1) || (window.location.href.indexOf("imagenes-exteriores") > -1)) {
