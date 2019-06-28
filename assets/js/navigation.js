@@ -106,7 +106,7 @@
 	});*/
 	//false menu for tipos de casa's childs
 	(function () {
-		if ((window.location.href.indexOf("tipo-de-casa") > -1) || (window.location.href.indexOf("imagenes-interiores") > -1) || (window.location.href.indexOf("tour-360-interior") > -1)) {
+		if ((window.location.href.indexOf("tipo-de-casa") > -1) || (window.location.href.indexOf("imagenes-interiores") > -1)) {
 			$('#thumbnail-slider').fadeTo(0, 1, function () {});
 			$('#falseMenu h2').html(tituloTC);
 			$('#falseMenu ul.falseMenu').html(subMenuTC);
