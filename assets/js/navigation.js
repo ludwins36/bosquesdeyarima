@@ -48,8 +48,8 @@
 	tituloUb = $('li.menu-item-2734 a').html();
 	subMenuUb = $('li.menu-item-2734 .sub-menu').html();
 
-	tituloTC = $('li.tipoCasas a').html();
-	subMenuTC = $('li.tipoCasas .sub-menu').html();
+	tituloTC = $('li.menu-item-2767 a').html();
+	subMenuTC = $('li.menu-item-2767 .sub-menu').html();
 	tituloU = $('li.ubicacion a').html();
 	tituloC = $('li.contacto a').html();
 	mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
