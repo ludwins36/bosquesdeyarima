@@ -56,6 +56,7 @@
 	paginasInternas = (window.location.href.indexOf("informacion") > -1) || (window.location.href.indexOf("tour-360-exterior") > -1) || (window.location.href.indexOf("imagenes-exteriores") > -1) || (window.location.href.indexOf("planos") > -1);
 	sinSubmenu = $('body.home').length || (window.location.href.indexOf("arma-tu-casa") > -1) || (window.location.href.indexOf("ubicacion") > -1) || (window.location.href.indexOf("contacto") > -1);
 	ubicacion = (window.location.href.indexOf("ubicacion") > -1);
+	tour = (window.location.href.indexOf("tour-360-exterior") > -1);
 
 	// MENU ANIMATION
 	// false menu proyectos
@@ -66,6 +67,19 @@
 	// 	$('#falseMenu').show();
 	// });
 	//false menu for proyecto's childs
+	(function () {
+		if (tour) {
+			$('#thumbnail-slider').fadeTo(0, 1, function () {});
+			$('#falseMenu h2').html(tituloPs);
+			$('#falseMenu ul.falseMenu').html(subMenuPs);
+			$('.menu-mobile-container').hide();
+			$('#falseMenu').show();
+			if (mobile) {
+				$('#falseMenu').hide();
+			}
+		}
+	})();
+
 	(function () {
 		if (paginasInternas) {
 			$('#thumbnail-slider').fadeTo(0, 1, function () {});
