@@ -12,7 +12,7 @@
  * @since 1.0
  * @version 1.0
  */
-get_header(); ?>
+get_header('yarima'); ?>
 <div class="container-fluid">
 	<div id="primary" class="content-area">hola
 		<main id="main" class="site-main" role="main">
