@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Disponibilidad
  * 
@@ -13,18 +14,19 @@
  */
 get_header('yarima'); ?>
 <div class="container-fluid">
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area">hola
 		<main id="main" class="site-main" role="main">
+
 			<?php // Show the selected frontpage content.
-			if ( have_posts() ) :
-				while ( have_posts() ) : the_post();
-					get_template_part( 'template-parts/page/content', 'page' );
+			if (have_posts()) :
+				while (have_posts()) : the_post();
+					get_template_part('template-parts/page/content', 'page');
 				endwhile;
 			else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
-				get_template_part( 'template-parts/post/content', 'none' );
-			endif; 
+				get_template_part('template-parts/post/content', 'none');
+			endif;
 			// Get each of our panels and show the post data.
-			if ( 0 !== twentyseventeen_panel_count() || is_customize_preview() ) : // If we have pages to show.
+			if (0 !== twentyseventeen_panel_count() || is_customize_preview()) : // If we have pages to show.
 				/**
 				 * Filter number of front page sections in Twenty Seventeen.
 				 *
@@ -32,14 +34,15 @@ get_header('yarima'); ?>
 				 *
 				 * @param int $num_sections Number of front page sections.
 				 */
-				$num_sections = apply_filters( 'twentyseventeen_front_page_sections', 4 );
+				$num_sections = apply_filters('twentyseventeen_front_page_sections', 4);
 				global $twentyseventeencounter;
 				// Create a setting and control for each of the sections available in the theme.
-				for ( $i = 1; $i < ( 1 + $num_sections ); $i++ ) {
+				for ($i = 1; $i < (1 + $num_sections); $i++) {
 					$twentyseventeencounter = $i;
-					twentyseventeen_front_page_section( null, $i );
+					twentyseventeen_front_page_section(null, $i);
 				}
-		endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
+			endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. 
+			?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
