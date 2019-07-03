@@ -5825,9 +5825,16 @@ footer#colophon.fixed {
 	border-color: #96B900;
 }
 
+.btn-head:hover {
+	background: #96B900;
+}
+
 
 .container-buttons {
 	position: absolute;
-	bottom: -500%;
+	bottom: -480%;
+}
+
+.btn-ws {
 	padding-bottom: 5px;
 }

@@ -60,7 +60,7 @@
 			<div class="container container-buttons">
 
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 btn-ws">
 						<a role="button" class="btn btn-outline-success btn-head"><?php echo __('Descargar PDF') ?></a>
 
 					</div>
