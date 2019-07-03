@@ -56,6 +56,20 @@
 					</div>
 				</div>
 			</div>
+			<div class="container container-buttons">
+				<div class="row">
+					<div class="col-12">
+						<a role="button" class="btn btn-outline-success"><?php echo __('WhatsApp') ?></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<a role="button" class="btn btn-outline-success"><?php echo __('Descargar PDF') ?></a>
+
+					</div>
+				</div>
+
+			</div>
 
 			<div class="container-fluid socials container-redes">
 				<div class="row">
@@ -74,16 +88,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid container-buttons">
-				<div class="row">
-					<div class="col-12">
-						<a role="button" class="btn btn-outline-success"><?php __('WhatsApp') ?></a>
-						<a role="button" class="btn btn-outline-success"><?php __('Descargar PDF') ?></a>
-					</div>
-				</div>
 
-
-			</div>
 		</header><!-- #masthead -->
 		<div class="site-content-contain">
 			<div id="content" class="site-content">
