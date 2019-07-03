@@ -5820,7 +5820,14 @@ footer#colophon.fixed {
 
 }
 
+.btn-head {
+	width: 140px;
+	border-color: #96B900;
+}
+
+
 .container-buttons {
 	position: absolute;
 	bottom: -500%;
+	padding-bottom: 5px;
 }

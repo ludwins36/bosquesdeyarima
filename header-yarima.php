@@ -58,15 +58,17 @@
 				</div>
 			</div>
 			<div class="container container-buttons">
+
 				<div class="row">
 					<div class="col-12">
-						<a role="button" class="btn btn-outline-success"><?php echo __('WhatsApp') ?></a>
+						<a role="button" class="btn btn-outline-success btn-head"><?php echo __('Descargar PDF') ?></a>
+
 					</div>
 				</div>
+
 				<div class="row">
 					<div class="col-12">
-						<a role="button" class="btn btn-outline-success"><?php echo __('Descargar PDF') ?></a>
-
+						<a role="button" class="btn btn-outline-success btn-head"><?php echo __('WhatsApp') ?></a>
 					</div>
 				</div>
 
