@@ -61,14 +61,14 @@
 
 				<div class="row">
 					<div class="col-12 btn-ws">
-						<a role="button" class="btn btn-outline-success btn-head"><?php echo __('Descargar PDF') ?></a>
+						<a role="button" href="http://www.bosquesdeyarima.com/wp-content/uploads/2019/07/AYUDAVENTAS-FEBRERO-2019-305x435-cm.pdf" class="btn btn-outline-success btn-head"><?php echo __('Descargar PDF') ?></a>
 
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-12">
-						<a role="button" class="btn btn-outline-success btn-head"><?php echo __('WhatsApp') ?></a>
+						<a role="button" href="https://api.whatsapp.com/send?phone=573127594477" class="btn btn-outline-success btn-head"><?php echo __('WhatsApp') ?></a>
 					</div>
 				</div>
 
