@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -55,6 +56,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="container-fluid socials container-redes">
 				<div class="row">
 					<div class="col-12 socials">
@@ -71,6 +73,16 @@
 						<?php endif; ?>
 					</div>
 				</div>
+			</div>
+			<div class="container-fluid container-buttons">
+				<div class="row">
+					<div class="col-12">
+						<a role="button" class="btn btn-outline-success"><?php __('WhatsApp') ?></a>
+						<a role="button" class="btn btn-outline-success"><?php __('Descargar PDF') ?></a>
+					</div>
+				</div>
+
+
 			</div>
 		</header><!-- #masthead -->
 		<div class="site-content-contain">
