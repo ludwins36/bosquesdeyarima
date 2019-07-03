@@ -30,7 +30,7 @@
 	<meta name="msapplication-TileColor" content="#2F3BA2">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/custom.css">
 	<link rel="manifest" href="js/manifest.json">
 	<?php wp_head(); ?>
 </head>
