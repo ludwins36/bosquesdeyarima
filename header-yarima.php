@@ -30,6 +30,7 @@
 	<meta name="msapplication-TileColor" content="#2F3BA2">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="css/custom.css">
 	<link rel="manifest" href="js/manifest.json">
 	<?php wp_head(); ?>
 </head>
@@ -57,15 +58,17 @@
 				</div>
 			</div>
 			<div class="container container-buttons">
-				<div class="row">
-					<div class="col-12">
-						<a role="button" class="btn btn-outline-success"><?php echo __('WhatsApp') ?></a>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<a role="button" class="btn btn-outline-success"><?php echo __('WhatsApp') ?></a>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-12">
-						<a role="button" class="btn btn-outline-success"><?php echo __('Descargar PDF') ?></a>
+					<div class="row">
+						<div class="col-12">
+							<a role="button" class="btn btn-outline-success"><?php echo __('Descargar PDF') ?></a>
 
+						</div>
 					</div>
 				</div>
 
